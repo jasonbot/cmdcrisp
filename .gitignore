@@ -7,6 +7,9 @@
 *.dll
 *.so
 *.dylib
+pbcopy
+pbpaste
+security
 
 # Test binary, built with `go test -c`
 *.test
