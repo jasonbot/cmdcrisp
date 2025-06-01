@@ -9,6 +9,7 @@
 *.dylib
 pbcopy
 pbpaste
+open
 security
 
 # Test binary, built with `go test -c`
