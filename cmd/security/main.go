@@ -20,9 +20,8 @@ func registerCommand(commandName string, command CommandFunc) {
 func help() {
 	fmt.Printf("%s: Emulates a subset of macOS' security command\n", os.Args[0])
 
-	for subcommand, commandFunc := range commands {
-		fmt.Printf("%s %s:\n", os.Args[0], subcommand)
-		commandFunc([]string{"-help"})
+	for commandFunc := range commands {
+		fmt.Printf("   %s\n", commandFunc)
 	}
 }
 
