@@ -7,10 +7,10 @@
 *.dll
 *.so
 *.dylib
-pbcopy
-pbpaste
-open
-security
+/pbcopy
+/pbpaste
+/open
+/security
 
 # Test binary, built with `go test -c`
 *.test
