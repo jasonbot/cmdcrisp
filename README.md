@@ -10,7 +10,7 @@ At my work, our developer experience is entirely geared toward local dev on macO
 
 I've implemented _just enough Apple_ to make my unholy Windows/Linux build hack stack runnable.
 
-This is _just scratching an itch to make the shell scripts I care about runnable on window command line and in WSL hosts_ it is not currently a full-fledged functional reimplementation of the whole thing. If you have further itches, you can for it PR here. This is not serious software.
+This is _just scratching an itch_ to make the shell scripts I care about runnable on window command line and in WSL hosts: it _is not currently a full-fledged functional reimplementation_ of the whole thing. If you have further itches, you can fork it or issue a PR here. This is not serious software.
 
 Commands currently implemented:
 
