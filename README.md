@@ -10,10 +10,24 @@ At my work, our developer experience is entirely geared toward local dev on macO
 
 I've implemented _just enough Apple_ to make my unholy Windows/Linux build hack stack runnable.
 
-This is _just scratching an itch to make the shell scripts I care about runnable on window command line and in WSL hosts_ it is not currently a full-fledged functional reimplementation of the whole thing. If you have further itches, you can for it PR here. This is not serious software.
+This is _just scratching an itch_ to make the shell scripts I care about runnable on window command line and in WSL hosts: it _is not currently a full-fledged functional reimplementation_ of the whole thing. If you have further itches, you can fork it or issue a PR here. This is not serious software.
 
 Commands currently implemented:
 
 - `pbcopy`/`pbpaste`: They're pretty straightforward
 - `open`: Just a subset of this is implemented, and it just forwards to `start` or `xdg-open`, respectively.
 - `security`: Only the teeniest bit of this is implemented for password storage using the OS-native keychain (see [`go-keyring`](https://github.com/zalando/go-keyring)).
+
+## Installing
+
+```shell
+go install github.com/jasonbot/cmdcrisp@latest
+```
+
+If you installed Go via the native installer in Windows, the place it adds tools to should already be in your `%PATH%`.
+
+In other systems, you'll need to add `$GOPATH/bin` to your `$PATH`, usually it's `~/go/bin/`.
+
+## Using
+
+Type the name of the desired command in a black text window and press enter. Hooray.
