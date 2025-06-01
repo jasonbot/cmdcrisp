@@ -20,6 +20,8 @@ Commands currently implemented:
 
 ## Installing
 
+You need a working copy of the Go compiler toolchain installed on your machine.
+
 ```shell
 go install github.com/jasonbot/cmdcrisp@latest
 ```
