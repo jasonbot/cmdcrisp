@@ -1,6 +1,6 @@
 # CommandCrisp
 
-Did you know that the main producer of Apples in the United States is the state of Washington? Did you know that the main producer of Microsoft software in the United States is Microsoft, _also_ in Washington?
+Did you know that the main producer of apples in the United States is the state of Washington? Did you know that the main producer of Microsoft software in the United States is Microsoft, _also_ in Washington?
 
 Really makes you think.
 
