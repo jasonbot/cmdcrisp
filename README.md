@@ -23,7 +23,9 @@ Commands currently implemented:
 You need a working copy of the Go compiler toolchain installed on your machine.
 
 ```shell
-go install github.com/jasonbot/cmdcrisp@latest
+git clone git@github.com:jasonbot/cmdcrisp.git
+cd cmdcrisp
+go install ./...
 ```
 
 If you installed Go via the native installer in Windows, the place it adds tools to should already be in your `%PATH%`.
