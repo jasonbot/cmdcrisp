@@ -51,10 +51,10 @@ func main() {
 	command := "xdg-open"
 
 	if runtime.GOOS == "Windows" {
-		command = "start"
+		command = "explorer.exe"
 
 		if e || t {
-			command = "notepad"
+			command = "notepad.exe"
 		}
 	} else {
 		if e || t {
