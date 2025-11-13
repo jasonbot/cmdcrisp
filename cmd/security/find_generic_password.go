@@ -17,11 +17,13 @@ func init() {
 		var (
 			a string // account to match
 			s string // service to match string
+			w bool   // Display the password(only) for the item found
 		)
 
 		// Parse flags
 		findPasswordFlags.StringVar(&a, "a", "", "account to match")
 		findPasswordFlags.StringVar(&s, "s", "", "service to match string")
+		findPasswordFlags.BoolVar(&w, "w", true, "display the password")
 
 		findPasswordFlags.Parse(args)
 
@@ -38,7 +40,9 @@ func init() {
 			log.Fatalf("Can't find password for %s - %s: %v", s, a, e)
 		}
 
-		fmt.Print(password)
+		if w {
+			fmt.Print(password)
+		}
 	}
 	registerCommand(funcName, findGenericPassword)
 }
