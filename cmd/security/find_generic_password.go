@@ -37,7 +37,7 @@ func init() {
 
 		password, e := keyring.Get(s, a)
 		if e != nil {
-			log.Fatalf("Can't find password for %s - %s: %v", s, a, e)
+			KeyringGet(s, a)
 		}
 
 		if w {

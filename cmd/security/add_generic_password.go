@@ -39,7 +39,9 @@ func init() {
 			log.Fatal("Empty account name")
 		}
 
-		keyring.Set(s, a, w)
+		if err := keyring.Set(s, a, w); err != nil {
+			KeyringSet(s, a, w)
+		}
 	}
 	registerCommand(funcName, addGenericPassword)
 }
