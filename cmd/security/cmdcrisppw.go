@@ -48,6 +48,10 @@ func KeyringSet(service, account, password string) error {
 func KeyringGet(service, account string) (string, error) {
 	keychain := loadPw()
 
+	if keychain.Passwords == nil {
+		keychain.Passwords = map[string]map[string]string{}
+	}
+
 	if keychain.Passwords[service] == nil {
 		keychain.Passwords[service] = map[string]string{}
 	}
